@@ -1,2 +1,43 @@
 @import "../../bower_components/bootstrap/less/bootstrap";
 @import "../../bower_components/bootstrap/less/theme";
+@import "../../bower_components/less-elements/elements";
+@import "../../bower_components/fontawesome/less/font-awesome";
+@import "variables";
+
+
+div.box1 {
+  height: @box-height;
+  border: @box-border-size;
+  background: @corporate-color;
+  &:hover {
+    background-color: lighten(@corporate-color,45%);
+  }
+}
+
+div.box2 {
+  
+  height: @box-height;
+  border: @box-border-size;
+  background: @corporate-color; 
+  .rounded(@box-border-radius);
+  
+  &:hover {
+    background-color: darken(@corporate-color,10%);
+  }
+}
+
+div.box3 {
+ 
+  height: @box-height;
+  border: @box-border-size;
+  .border-radius(@box-border-radius, @box-border-radius, @box-border-radius,30px);
+  .gradient(#FFF, @mycolor, lighten(@mycolor, 30%));
+}
+
+.wisteria {
+  color: #27ae60;
+}
+
+.belize {
+  color: #2980b9;
+}
